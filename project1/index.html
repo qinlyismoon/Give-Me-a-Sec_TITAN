@@ -1,101 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Dis(information)</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
-  <style>
-    body {
-    #canvas-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 20px 0;
-    }
+<style>
+  body {
+    font-family: 'Courier New', monospace;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #slider-holder {
-      margin-top: 12px;
-      width: 600px;
-      text-align: center;
-    }
-    
-      font-family: 'Courier New', monospace;
-      background-color: white;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  #canvas-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
 
-    header {
-      padding: 40px 20px 10px;
-      text-align: center;
-    }
+  #slider-holder {
+    margin-top: 12px;
+    width: 600px;
+    text-align: center;
+  }
 
-    h1 {
-      font-size: 32px;
-      margin: 0;
-      color: #111;
-      letter-spacing: 1px;
-    }
+  header {
+    padding: 40px 20px 10px;
+    text-align: center;
+  }
 
-    #canvas-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 20px 0;
-    }
+  h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #111;
+    letter-spacing: 1px;
+  }
 
-    #slider-holder {
-      margin-top: 10px;
-    }
+  footer {
+    max-width: 800px;
+    padding: 10px 30px 50px;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.7;
+  }
 
-    footer {
-      max-width: 800px;
-      padding: 10px 30px 50px;
-      font-size: 16px;
-      color: #222;
-      line-height: 1.7;
-    }
+  footer h2 {
+    font-size: 18px;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: #444;
+  }
 
-    footer h2 {
-      font-size: 18px;
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
-      color: #444;
-    }
-
-    canvas {
-      display: block;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Dis(information)</h1>
-  </header>
-
-  <!-- ✅ 包裹画布和滑块 -->
-  <div id="canvas-wrapper">
-    <div id="canvas-container"></div>
-    <div id="slider-holder"></div>
-  </div>
-
-  <footer>
-    <h2>Interaction</h2>
-    <p>A right-to-left slider gradually reveals the prefix “dis-” hidden behind the word “information.”</p>
-
-    <h2>Description</h2>
-    <p>This interactive media piece examines the layered relationship between information perception and disinformation concealment through a reverse-direction slider interface.</p>
-    <p>This two-way tension between opposite motion vectors creates a sense of cognitive dissonance—an embodied metaphor for the inner friction of critical thinking. Each time the page is refreshed, the positions of “dis-” prefixes are randomly redistributed, ensuring that every encounter produces a new spatial configuration of concealment and revelation.</p>
-
-    <h2>Design Intention</h2>
-    <p>By reversing the expected directionality of UI interaction and injecting spatial randomness into where disinformation surfaces, the design embeds epistemic friction into the interface logic itself. Users must actively disrupt the screen to reveal what was hidden in plain sight—engaging in a micro-performance of critical thinking.</p>
-    <p>Rooted in media literacy and interface criticism, Dis(information) reframes interaction as a cognitive act: one should question the obvious, and reassemble meaning through deliberate inquiry.</p>
-  </footer>
-
-  <script src="sketch.js"></script>
-</body>
-</html>
+  canvas {
+    display: block;
+  }
+</style>
