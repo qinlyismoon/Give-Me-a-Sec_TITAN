@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Dis(information)</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
+    header {
+      padding: 40px 20px 10px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+    #canvas-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      max-width: 800px;
+      padding: 10px 30px 50px;
+      font-size: 16px;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    footer h2 {
+      font-size: 18px;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #444;
+    }
+
+    canvas {
+      border: 2px solid transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dis(information)</h1>
+  </header>
+
+  <div id="canvas-container">
+    <!-- p5.js canvas will appear here -->
+  </div>
+
+  <footer>
+    <h2>Interaction</h2>
+    <p>A right-to-left slider gradually reveals the prefix “dis-” hidden behind the word “information.”</p>
+
+    <h2>Description</h2>
+    <p>This interactive media piece examines the layered relationship between information perception and disinformation concealment through a reverse-direction slider interface.</p>
+    <p>This two-way tension between opposite motion vectors creates a sense of cognitive dissonance—an embodied metaphor for the inner friction of critical thinking. Each time the page is refreshed, the positions of “dis-” prefixes are randomly redistributed, ensuring that every encounter produces a new spatial configuration of concealment and revelation.</p>
+
+    <h2>Design Intention</h2>
+    <p>By reversing the expected directionality of UI interaction and injecting spatial randomness into where disinformation surfaces, the design embeds epistemic friction into the interface logic itself. Users must actively disrupt the screen to reveal what was hidden in plain sight—engaging in a micro-performance of critical thinking.</p>
+    <p>Rooted in media literacy and interface criticism, <strong>Dis(information)</strong> reframes interaction as a cognitive act: one should question the obvious, and reassemble meaning through deliberate inquiry.</p>
+  </footer>
+
+  <script src="sketch.js"></script>
+</body>
 </html>
