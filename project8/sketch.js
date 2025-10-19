@@ -12,6 +12,7 @@ function preload() {
 
 function setup() {
   createCanvas(700, 600);
+  canvas.parent("canvas-container");
   video = createCapture(VIDEO);
   video.size(640, 480);
   video.hide();
