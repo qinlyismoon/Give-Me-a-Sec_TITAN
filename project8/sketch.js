@@ -13,11 +13,11 @@ function preload() {
 function setup() {
   let canvas= createCanvas(700, 600);
   canvas.parent("canvas-container");
+  
   video = createCapture(VIDEO);
   video.size(640, 480);
   video.hide();
 
-  // ✅ 使用 ml5 handpose 旧版模型
   handposeModel = ml5.handpose(video, () => {
     console.log("✅ Handpose model loaded!");
   });
