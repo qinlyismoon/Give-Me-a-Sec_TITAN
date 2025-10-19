@@ -11,18 +11,18 @@ function preload() {
 
 function setup() {
   let cnv = createCanvas(600, 600);
-  cnv.parent("canvas-container"); // 让画布嵌入 HTML 中的容器中
+  cnv.parent("canvas-container");
 
   textFont(font);
   textAlign(RIGHT, CENTER);
   textSize(fontSize);
   noStroke();
 
-  // slider 设置
-  slider = createSlider(0, 100, 0); // 初始值为0，只显示"information"
-  slider.position(10, height + 30); // 向下错开
+  // ✅ 把 slider 挂载到 slider-holder 中，而不是直接放 body
+  slider = createSlider(0, 100, 0);
+  slider.parent("slider-holder");
   slider.style("width", "580px");
-  slider.style("direction", "rtl"); // 设置滑动方向从右向左
+  slider.style("direction", "rtl");
 
   // 生成 disinformation 行
   let spacing = fontSize + 10;
