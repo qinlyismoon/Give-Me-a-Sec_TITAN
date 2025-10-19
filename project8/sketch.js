@@ -15,6 +15,7 @@ async function setup() {
   await tf.ready();             // ✅ 确保 TensorFlow 初始化完成
 
   createCanvas(700, 600);
+  canvas.parent("canvas-container")
   video = createCapture(VIDEO);
   video.size(640, 480);
   video.hide();
