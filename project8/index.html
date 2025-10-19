@@ -1,20 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>TITAN with Hand Tracking</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>Seeing Ourselves</title>
 
-    <!-- p5.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <!-- p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.dom.min.js"></script>
 
-    <!-- TensorFlow.js + MediaPipe Hands -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/hand-pose-detection"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.min.js"></script>
+  <!-- TensorFlow.js + MediaPipe Hands -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/hand-pose-detection"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.min.js"></script>
 
-    <!-- Your p5 sketch will auto-insert canvas here -->
-    <script src="sketch.js"></script>
-  </body>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', monospace;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    #canvas-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    #slider-holder {
+      margin-top: 12px;
+      width: 600px;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px 10px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      max-width: 800px;
+      padding: 10px 30px 50px;
+      font-size: 16px;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    footer h2 {
+      font-size: 18px;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #444;
+    }
+
+    .back-button {
+      margin: 40px 0 60px;
+      text-align: center;
+    }
+
+    .back-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Seeing Ourselves</h1>
+  </header>
+
+  <div id="canvas-wrapper">
+    <div id="canvas-container"></div>
+    <div id="slider-holder"></div>
+  </div>
+
+  <footer>
+    <h2>Interaction</h2>
+    <p>Using a webcam and the ml5.js handpose model, users perform a thumb-index finger pinch gesture to grab and drag floating blocks of “information” and “disinformation.” As blocks are moved off-screen, previously obscured areas of the live video feed become visible—eventually revealing the user’s own face.</p>
+
+    <h2>Description</h2>
+    <p>Through repeated pinch-and-drag gestures, users physically clear media labels. Each gesture removes a fragment of visual noise, gradually uncovering the live webcam image beneath. When enough of the screen is cleared, the user sees themself—directly, unobstructed, and present. This moment of self-visibility serves as a powerful metaphor: beneath fragmented media narratives lies the self—capable, perceiving, and central to meaning-making.
+</p>
+
+    <h2>Design Intention</h2>
+    <p>By merging gesture-driven interaction with a layered visual system, Seeing Ourselves reframes information navigation as a return to self-recognition and cognitive sovereignty. This piece calls on users to reclaim clarity and affirm their capacity to discern, to think, and to choose. As the final piece in the TITAN series, this work re-centers the system’s deeper mission: to support users in seeing themselves as capable thinkers— intentional and awake.</p>
+
+    <div class="back-button">
+      <a href="../index.html">← Back to Gallery</a>
+    </div>
+  </footer>
+
+  <!-- Your hand tracking sketch -->
+  <script src="sketch.js"></script>
+</body>
 </html>
