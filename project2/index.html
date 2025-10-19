@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+<head>
+  <meta charset="utf-8" />
+  <title>Behind the Information</title>
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
+  <!-- p5.js and sound library -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"></script>
+
+  <!-- optional external style -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      padding: 40px 20px 10px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+    #canvas-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    footer {
+      max-width: 800px;
+      padding: 10px 30px 50px;
+      font-size: 16px;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    footer h2 {
+      font-size: 18px;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #444;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Behind the Information</h1>
+  </header>
+
+  <div id="canvas-wrapper">
+    <div id="canvas-container"></div>
+  </div>
+
+  <footer>
+    <h2>Interaction</h2>
+    <p>Hovering over pixelated “information” or “disinformation” causes the text to disintegrate into particles, gradually revealing the word <strong>TITAN</strong> beneath “disinformation”.</p>
+
+    <h2>Description</h2>
+    <p>Within a grid of repetitive “information,” certain entries subtly distort—signaling disinformation. When interacted with, these unstable words break apart into granular particles, gradually exposing <strong>TITAN</strong> beneath the noise.</p>
+
+    <h2>Design Intention</h2>
+    <p>This piece introduces <strong>TITAN</strong> as a conceptual presence embedded within the visual field. <br>
+    <strong>TITAN</strong> beneath fragmented surface layers illustrates how AI-supported inquiry operates beneath the illusion of clarity—revealing through interaction.</p>
+  </footer>
+
+  <script src="sketch.js"></script>
+</body>
 </html>
