@@ -20,7 +20,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background("#D1E7F2");
 
   // Backimage：Titan logo particle
   for (let p of particlesBack) {
