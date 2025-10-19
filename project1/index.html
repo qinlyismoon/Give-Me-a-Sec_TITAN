@@ -1,108 +1,98 @@
-<style>
-  body {
-    font-family: 'Courier New', monospace;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #canvas-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-  }
-
-  #slider-holder {
-    margin-top: 12px;
-    width: 600px;
-    text-align: center;
-  }
-
-  header {
-    padding: 40px 20px 10px;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 32px;
-    margin: 0;
-    color: #111;
-    letter-spacing: 1px;
-  }
-
-  footer {
-    max-width: 800px;
-    padding: 10px 30px 50px;
-    font-size: 16px;
-    color: #222;
-    line-height: 1.7;
-  }
-
-  footer h2 {
-    font-size: 18px;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    color: #444;
-  }
-
-  canvas {
-    display: block;
-  }
-
-  .back-button {
-    margin: 40px 0 60px;
-    text-align: center;
-  }
-
-  .back-button a {
-    display: inline-block;
-    padding: 10px 20px;
-    font-family: 'Courier New', monospace;
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
-  }
-
-  .back-button a:hover {
-    background-color: #333;
-  }
-</style>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dis(information)</title>
+  <meta charset="UTF-8" />
+  <title>(Dis)Information</title>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.dom.min.js"></script>
+
   <style>
     html, body {
       margin: 0;
       padding: 0;
+      font-family: 'Courier New', monospace;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
     canvas {
       display: block;
+    }
+
+    #canvas-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    #slider-holder {
+      margin-top: 12px;
+      width: 600px;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px 10px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      max-width: 800px;
+      padding: 10px 30px 50px;
+      font-size: 16px;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    footer h2 {
+      font-size: 18px;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #444;
+    }
+
+    .back-button {
+      margin: 40px 0 60px;
+      text-align: center;
+    }
+
+    .back-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #333;
     }
   </style>
 </head>
 
-
 <body>
-
   <header>
-    <h1>Dis(information)</h1>
+    <h1>(Dis)Information</h1>
   </header>
 
   <div id="canvas-wrapper">
     <div id="canvas-container"></div>
     <div id="slider-holder"></div>
   </div>
-
 
   <footer>
     <h2>Interaction</h2>
@@ -114,12 +104,13 @@
 
     <h2>Design Intention</h2>
     <p>By reversing the expected directionality of UI interaction and injecting spatial randomness into where disinformation surfaces, the design embeds epistemic friction into the interface logic itself. Users must actively disrupt the screen to reveal what was hidden in plain sight—engaging in a micro-performance of critical thinking.</p>
-    <p>Rooted in media literacy and interface criticism, Dis(information) reframes interaction as a cognitive act: one should question the obvious, and reassemble meaning through deliberate inquiry.</p>
+
     <div class="back-button">
       <a href="../index.html">← Back to Gallery</a>
     </div>
   </footer>
 
+  <!-- ✅ 加载你的 sketch.js -->
   <script src="sketch.js"></script>
 </body>
 </html>
