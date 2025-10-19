@@ -10,7 +10,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600);
+  let cnv = createCanvas(600, 600);
   cnv.parent("canvas-container");
   
   textFont(font);
@@ -18,9 +18,8 @@ function setup() {
   textSize(fontSize);
   noStroke();
 
-  // slider
-  slider = createSlider(0, 100, 0); // Initially set to 0, meaning only "information" will be displayed.
-  slider.position("slider-holder");
+  slider = createSlider(0, 100, 0); 
+  slider.parent("slider-holder");
   slider.style("width", "580px");
   slider.style("direction", "rtl");
 
