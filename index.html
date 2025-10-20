@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Give Me a Sec</title>
   <style>
     body {
@@ -10,15 +10,11 @@
       font-family: 'Courier New', monospace;
       background-color: white;
       color: #111;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
 
     header {
       text-align: center;
       padding: 60px 30px 20px;
-      max-width: 800px;
     }
 
     h1 {
@@ -26,24 +22,30 @@
       margin-bottom: 10px;
     }
 
-    h2 {
+    .subtitle {
       font-size: 20px;
-      font-weight: normal;
-      color: #333;
-      margin-bottom: 30px;
+      color: #666;
+      margin-bottom: 40px;
     }
 
-    p {
+    .intro {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 30px;
+      text-align: left;
+    }
+
+    .intro p {
       font-size: 16px;
       line-height: 1.7;
-      color: #222;
-      margin: 10px 0;
+      margin-bottom: 18px;
     }
 
     ul {
       list-style-type: none;
       padding: 0;
       margin-top: 40px;
+      text-align: center;
     }
 
     li {
@@ -66,11 +68,22 @@
 <body>
   <header>
     <h1>Give Me a Sec</h1>
-    <h2>A Socratic Pixelated Journey through Critical Thinking and Disinformation</h2>
-
-    <p>Inspired by TITAN, a conversational AI rooted in the Socratic method, this collection of interactive experiences explores what critical thinking feels like, looks like, and sounds like.</p>
-    <p>Each piece invites you to pause, probe, and participate—to reflect on how you perceive information, resist superficial clarity, and re-engage with the slow, intentional labor of making sense.</p>
+    <div class="subtitle">
+      A Socratic Pixelated Journey through Critical Thinking and Disinformation
+    </div>
   </header>
+
+  <section class="intro">
+    <p>
+      Inspired by <strong>TITAN</strong>, a conversational AI rooted in the Socratic method, this collection of interactive experiences explores what <em>critical thinking feels like, looks like, and sounds like</em>.
+    </p>
+    <p>
+      Each piece invites you to <strong>pause, probe, and participate</strong>—to reflect on how you perceive information, resist superficial clarity, and re-engage with the slow, intentional labor of making sense.
+    </p>
+    <p>
+      Across gestures, sound, and text, these works ask not for immediate answers, but for a second—a moment to think <em>with, through, and beyond the interface</em>.
+    </p>
+  </section>
 
   <ul>
     <li><a href="project1/index.html">🧠 (Dis)Information</a></li>
