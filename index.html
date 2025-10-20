@@ -3,99 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <title>Give Me a Sec</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Courier New', monospace;
-      background-color: white;
-      color: #111;
-    }
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background-color: white;
+    color: #111;
+  }
 
-    header {
-      text-align: center;
-      padding: 60px 30px 20px;
-    }
+  header {
+    text-align: center;
+    padding: 60px 30px 20px;
+  }
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+  h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
 
-    .subtitle {
-      font-size: 20px;
-      color: #666;
-      margin-bottom: 40px;
-    }
+  .subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 40px;
+  }
 
-    .intro {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 30px;
-      text-align: left;
-    }
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px;
+    gap: 60px;
+  }
 
-    .intro p {
-      font-size: 16px;
-      line-height: 1.7;
-      margin-bottom: 18px;
-    }
+  .intro-text, .project-links {
+    flex: 1 1 400px;
+  }
 
-    ul {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 40px;
-  text-align: center;
-}
+  .intro-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    text-align: left;
+  }
 
-li {
-  margin: 15px 0;
-  display: flex;
-  justify-content: center;
-}
+  .project-links {
+    text-align: left;
+  }
 
-a {
-  display: inline-block;
-  font-size: 22px;
-  color: #3b0a55;
-  text-decoration: none;
-  transition: color 0.2s ease;
-  text-align: center;
-}
+  .project-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
 
-    a:hover {
-      color: #0077cc;
-    }
-  </style>
-</head>
+  .project-links li {
+    margin: 15px 0;
+  }
+
+  .project-links a {
+    font-size: 20px;
+    color: #5e2a84;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .project-links a:hover {
+    color: #0077cc;
+  }
+</style>
 
 <body>
   <header>
-  <h1>Give Me a Sec</h1>
-  <h2>A Socratic Pixelated Journey through Critical Thinking and Disinformation</h2>
-  
-  <p>
-  “Give Me a Sec” reimagines critical thinking as a temporal, embodied, and intentional process.  
-  Inspired by <strong>TITAN</strong>—a conversational AI rooted in the Socratic method—this series of interactive works explores what it means to pause, question, and re-engage with how we understand and interpret information.
-  </p>
-  
-  <p>
-  Across gestures, voice-controlled interfaces, and text-triggered interactions, users confront disinformation, uncover hidden layers of meaning, and encounter TITAN as a quiet guide beneath the noise. 
-  </p>
-  
-  <p>
-  Rather than providing answers, each piece invites active participation: to reflect, resist, and reconstruct.  
-  In doing so, the project reframes truth-seeking as a practice of presence, shaped not by certainty—but by curiosity, friction, and intentional thinking.
-  </p>
-  </section>
+    <h1>Give Me a Sec</h1>
+    <h2 class="subtitle">A Socratic Pixelated Journey through Critical Thinking and Disinformation</h2>
+  </header>
 
-  <ul>
-    <li><a href="project1/index.html">🧠 (Dis)Information</a></li>
-    <li><a href="project2/index.html">🧿 Behind the Disinformation</a></li>
-    <li><a href="project3/index.html">🎹 TITAN Is...</a></li>
-    <li><a href="project5/index.html">🔎 Typing to Know TITAN</a></li>
-    <li><a href="project4/index.html">🗣️ Voicing Forward</a></li>
-    <li><a href="project8/index.html">🙆 Thinkers</a></li>
-  </ul>
+  <div class="content-container">
+    <div class="intro-text">
+      <p>“<strong>Give Me a Sec</strong>” reimagines critical thinking as a temporal, embodied, and intentional process.</p>
+      <p>Inspired by <strong>TITAN</strong>—a conversational AI rooted in the Socratic method—this series of interactive works explores what it means to pause, question, and re-engage with how we understand and interpret information.</p>
+      <p>Across gestures, voice-controlled interfaces, and text-triggered interactions, users confront disinformation, uncover hidden layers of meaning, and encounter TITAN as a quiet guide beneath the noise.</p>
+      <p>Rather than providing answers, each piece invites active participation: to reflect, resist, and reconstruct. In doing so, the project reframes truth-seeking as a practice of presence, shaped not by certainty—but by curiosity, friction, and intentional thinking.</p>
+    </div>
+
+    <div class="project-links">
+      <ul>
+        <li><a href="project1/index.html">🧠 (Dis)Information</a></li>
+        <li><a href="project2/index.html">🧿 Behind the Disinformation</a></li>
+        <li><a href="project3/index.html">🎹 TITAN Is...</a></li>
+        <li><a href="project5/index.html">🔎 Typing to Know TITAN</a></li>
+        <li><a href="project4/index.html">🗣️ Voicing Forward</a></li>
+        <li><a href="project8/index.html">🙆 Thinkers</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
