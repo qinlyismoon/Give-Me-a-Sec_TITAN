@@ -36,7 +36,7 @@ function setup() {
 }
 
 function draw() {
-  background("#48AFEE");
+  background("#D1E7F2");
 
   let sliderVal = slider.value(); // 获取滑块值
   let disMaxWidth = textWidth("dis");
