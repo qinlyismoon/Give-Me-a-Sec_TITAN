@@ -55,25 +55,36 @@
       color: #444;
     }
 
-    .back-button {
-      margin: 40px 0 60px;
-      text-align: center;
-    }
+    .footer-nav-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+  padding: 0 10px;
+  gap: 10px;
+}
 
-    .back-button a {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 16px;
-      text-decoration: none;
-      color: white;
-      background-color: black;
-      border-radius: 4px;
-      transition: background-color 0.2s ease;
-    }
-
-    .back-button a:hover {
-      background-color: #333;
-    }
+  .nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+  }
+  
+  .nav-button:hover {
+    background-color: #333;
+  }
+  
+  .nav-button.placeholder {
+    background: transparent;
+    pointer-events: none;
+    visibility: hidden;
+  }
   </style>
 </head>
 
@@ -96,8 +107,10 @@
     <h2>Design Intention</h2>
     <p>"Voicing Forward" operationalizes critical thinking as embodied learning. Voice becomes action. Movement becomes method. The interface rejects passive reception, requiring users to speak their way forward. Titan is positioned as a co-participant, supporting epistemic progression.</p>
 
-    <div class="back-button">
-      <a href="../index.html">← Back to Gallery</a>
+    <div class="footer-nav-three">
+  <a href="../index.html" class="nav-button">Back to Gallery</a>
+  <a href="../project5/index.html" class="nav-button">←</a>
+  <a href="../project8/index.html" class="nav-button">→</a>
     </div>
   </footer>
 
