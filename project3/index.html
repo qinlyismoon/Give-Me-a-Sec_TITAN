@@ -56,12 +56,16 @@
       color: #444;
     }
 
-    .back-button {
-      margin: 40px 0 60px;
-      text-align: center;
-    }
+    .footer-nav-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+  padding: 0 10px;
+  gap: 10px;
+}
 
-    .back-button a {
+    .nav-button {
       display: inline-block;
       padding: 10px 20px;
       font-size: 16px;
@@ -70,10 +74,17 @@
       background-color: black;
       border-radius: 4px;
       transition: background-color 0.2s ease;
+      white-space: nowrap;
     }
-
-    .back-button a:hover {
+    
+    .nav-button:hover {
       background-color: #333;
+    }
+    
+    .nav-button.placeholder {
+      background: transparent;
+      pointer-events: none;
+      visibility: hidden;
     }
   </style>
 </head>
@@ -97,9 +108,10 @@
     <h2>Design Intention</h2>
     <p>"TITAN Is..." functions as an interface-as-diagram, visually and temporally unpacking the philosophical and pedagogical logic behind the TITAN system. This slow, conceptual emergence reflects TITAN’s mission: to support active critical thinking.</p>
 
-    <div class="back-button">
-      <a href="../index.html">← Back to Gallery</a>
-    </div>
+    <div class="footer-nav-three">
+      <a href="../index.html" class="nav-button">Back to Gallery</a>
+      <a href="../project2/index.html" class="nav-button">←</a>
+      <a href="../project5/index.html" class="nav-button">→</a>
   </footer>
 
   <script src="sketch.js"></script>
