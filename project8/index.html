@@ -66,12 +66,28 @@
       color: #444;
     }
 
-    .back-button {
+    .footer-nav-three {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin: 40px 0 60px;
-      text-align: center;
+      padding: 0 10px;
+      width: 100%;
+      max-width: 800px;
     }
-
-    .back-button a {
+    
+    .footer-left {
+      flex: 1;
+    }
+    
+    .footer-right {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      flex: 1;
+    }
+    
+    .nav-button {
       display: inline-block;
       padding: 10px 20px;
       font-size: 16px;
@@ -80,10 +96,17 @@
       background-color: black;
       border-radius: 4px;
       transition: background-color 0.2s ease;
+      white-space: nowrap;
     }
-
-    .back-button a:hover {
+    
+    .nav-button:hover {
       background-color: #333;
+    }
+    
+    .nav-button.placeholder {
+      background: transparent;
+      pointer-events: none;
+      visibility: hidden;
     }
   </style>
 </head>
@@ -107,9 +130,11 @@
     <h2>Design Intention</h2>
     <p>By merging gesture-driven interaction with a layered visual system, "Thinkers" reframes information navigation as a return to self-recognition and cognitive sovereignty. This piece calls on users to reclaim clarity and affirm their capacity to discern, to think, and to choose. As the final piece in the TITAN series, this work re-centers the system’s deeper mission: to support users in seeing themselves as capable thinkers—intentional and awake.</p>
 
-    <div class="back-button">
-      <a href="../index.html">← Back to Gallery</a>
-    </div>
+  <div class="footer-nav-three">
+    <a href="../index.html" class="nav-button">Back to Gallery</a>
+    <a href="../project4/index.html" class="nav-button">←</a>
+    <span class="nav-button placeholder"></span> <!-- 下一页占位 -->
+  </div>
   </footer>
 
   <!-- hand tracking sketch -->
