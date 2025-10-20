@@ -56,36 +56,44 @@
       color: #444;
     }
     
-    .footer-nav-three {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 40px 0 60px;
-  padding: 0 10px;
-  gap: 10px;
-}
-
-.nav-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-  white-space: nowrap;
-}
-
-.nav-button:hover {
-  background-color: #333;
-}
-
-.nav-button.placeholder {
-  background: transparent;
-  pointer-events: none;
-  visibility: hidden;
-}
+    .footer-nav-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0 60px;
+      padding: 0 10px;
+      width: 100%;
+      max-width: 800px;
+    }
+    
+    .nav-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+      white-space: nowrap;
+    }
+    
+    .nav-button:hover {
+      background-color: #333;
+    }
+    
+    /* 包住右侧的上下页按钮 */
+    .right-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    
+    /* 如果某个按钮需要隐藏但保留空间，可以使用 placeholder 类 */
+    .nav-button.placeholder {
+      background: transparent;
+      pointer-events: none;
+      visibility: hidden;
+    }
   </style>
 </head>
 
