@@ -55,35 +55,45 @@
     }
 
     .footer-nav-three {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 40px 0 60px;
-  padding: 0 10px;
-  gap: 10px;
-}
-
-    .nav-button {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 16px;
-      text-decoration: none;
-      color: white;
-      background-color: black;
-      border-radius: 4px;
-      transition: background-color 0.2s ease;
-      white-space: nowrap;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0 60px;
+      max-width: 800px; 
+      padding: 0 0px;    
+      width: 100%;
     }
     
-    .nav-button:hover {
-      background-color: #333;
+    .footer-left {
+      flex-shrink: 0;
     }
     
-    .nav-button.placeholder {
-      background: transparent;
-      pointer-events: none;
-      visibility: hidden;
+    .footer-right {
+      display: flex;
+      gap: 8px; /* 控制左右按钮间的距离 */
     }
+        
+        .nav-button {
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 16px;
+          text-decoration: none;
+          color: white;
+          background-color: black;
+          border-radius: 4px;
+          transition: background-color 0.2s ease;
+          white-space: nowrap;
+        }
+        
+        .nav-button:hover {
+          background-color: #333;
+        }
+        
+        .nav-button.placeholder {
+          background: transparent;
+          pointer-events: none;
+          visibility: hidden;
+        }
   </style>
 </head>
 
@@ -106,11 +116,15 @@
     <h2>Design Intention</h2>
     <p>As a conversational AI, TITAN begins with language—and through that language, it helps users practice critical thinking and gain clarity. Typing “TITAN” becomes a symbolic entry point: to name the tool is to activate its potential, to bring coherence to complexity, and to see through the noise of information.</p>
 
-    <div class="footer-nav-three">
-  <a href="../index.html" class="nav-button">Back to Gallery</a>
-  <a href="../project3/index.html" class="nav-button">←</a>
-  <a href="../project4/index.html" class="nav-button">→</a>
-    </div>
+<div class="footer-nav-three">
+  <div class="footer-left">
+    <a href="../index.html" class="nav-button">Back to Gallery</a>
+  </div>
+  
+  <div class="footer-right">
+    <a href="../project3/index.html" class="nav-button">←</a>
+    <a href="../project4/index.html" class="nav-button">→</a>
+  </div>
   </footer>
 
   <script src="sketch.js"></script>
