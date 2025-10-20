@@ -56,25 +56,36 @@
       color: #444;
     }
     
-    .back-button {
-      margin: 40px 0 60px;
-      text-align: center;
-    }
+    .footer-nav-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+  padding: 0 10px;
+  gap: 10px;
+}
 
-    .back-button a {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 16px;
-      text-decoration: none;
-      color: white;
-      background-color: black;
-      border-radius: 4px;
-      transition: background-color 0.2s ease;
-    }
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
 
-    .back-button a:hover {
-      background-color: #333;
-    }
+.nav-button:hover {
+  background-color: #333;
+}
+
+.nav-button.placeholder {
+  background: transparent;
+  pointer-events: none;
+  visibility: hidden;
+}
   </style>
 </head>
 
@@ -97,9 +108,11 @@
     <h2>Design Intention</h2>
     <p>This piece introduces TITAN as a conceptual presence embedded within the visual field. TITAN beneath fragmented surface layers illustrates how AI-supported inquiry operates beneath the illusion of clarity—revealing through interaction.</p>
 
-    <div class="back-button">
-      <a href="../index.html">← Back to Gallery</a>
-    </div>
+<div class="footer-nav-three">
+  <a href="../index.html" class="nav-button">Back to Gallery</a>
+  <a href="../project1/index.html" class="nav-button">←</a>
+  <a href="../project3/index.html" class="nav-button">→</a>
+</div>
     
   </footer>
 
