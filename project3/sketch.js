@@ -11,7 +11,9 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600);
+  let canvas =  createCanvas(600, 600);
+  canvas.parent("canvas-container"); 
+ 
   textFont(pixelFont);
   textAlign(CENTER, CENTER);
   rectMode(CENTER);
