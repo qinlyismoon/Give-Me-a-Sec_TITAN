@@ -62,7 +62,7 @@ function draw() {
     if (isDisinfo && visibleW > 0) {
       let disStartX = x - textWidth("information") - disMaxWidth;
 
-      fill("#832011");
+      fill("#cb4a31");
       push();
       drawingContext.save();
       drawingContext.beginPath();
