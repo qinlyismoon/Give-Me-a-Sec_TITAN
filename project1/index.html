@@ -62,45 +62,36 @@
       color: #444;
     }
 
-    .back-button {
-  margin: 40px 0 20px;
-  text-align: left;
+.footer-nav-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 60px;
+  padding: 0 10px;
+  gap: 10px;
 }
 
-    .back-button a {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 16px;
-      text-decoration: none;
-      color: white;
-      background-color: black;
-      border-radius: 4px;
-      transition: background-color 0.2s ease;
-    }
-    
-    .back-button a:hover {
-      background-color: #333;
-    }
-    
-    .next-button {
-      text-align: right;
-      margin-top: 30px;
-    }
-    
-    .next-button a {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 16px;
-      text-decoration: none;
-      color: white;
-      background-color: black;
-      border-radius: 4px;
-      transition: background-color 0.2s ease;
-    }
-    
-    .next-button a:hover {
-      background-color: #333;
-    }
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-button:hover {
+  background-color: #333;
+}
+
+.nav-button.placeholder {
+  background: transparent;
+  pointer-events: none;
+  visibility: hidden;
+}
   </style>
 </head>
 
@@ -126,13 +117,11 @@
     <p>By reversing the expected directionality of UI interaction and injecting spatial randomness into where disinformation surfaces, the design embeds epistemic friction into the interface logic itself. Users must actively disrupt the screen to reveal what was hidden in plain sight—engaging in a micro-performance of critical thinking.</p>
 
 
-  <div class="back-button">
-    <a href="../index.html">Back to Gallery</a>
-  </div>
-
-  <div class="next-button">
-    <a href="../project2/index.html">→</a>
-  </div>
+<div class="footer-nav-three">
+  <a href="../index.html" class="nav-button left">← Back to Gallery</a>
+  <span class="nav-button placeholder"></span> <!-- 占位保持居中按钮不跳 -->
+  <a href="../project2/index.html" class="nav-button right">Next Project →</a>
+</div>
 </footer>
 
   <!-- ✅ 加载你的 sketch.js -->
