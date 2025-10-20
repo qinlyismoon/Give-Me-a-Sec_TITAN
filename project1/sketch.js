@@ -10,7 +10,6 @@ function preload() {
 }
 
 function setup() {
-  // 创建 canvas 并插入指定 div
   let canvas = createCanvas(600, 600);
   canvas.parent("canvas-container");
 
