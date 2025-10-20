@@ -63,9 +63,9 @@
     }
 
     .back-button {
-      margin: 40px 0 60px;
-      text-align: center;
-    }
+  margin: 40px 0 20px;
+  text-align: left;
+}
 
     .back-button a {
       display: inline-block;
@@ -77,8 +77,28 @@
       border-radius: 4px;
       transition: background-color 0.2s ease;
     }
-
+    
     .back-button a:hover {
+      background-color: #333;
+    }
+    
+    .next-button {
+      text-align: right;
+      margin-top: 30px;
+    }
+    
+    .next-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+    
+    .next-button a:hover {
       background-color: #333;
     }
   </style>
@@ -105,10 +125,15 @@
     <h2>Design Intention</h2>
     <p>By reversing the expected directionality of UI interaction and injecting spatial randomness into where disinformation surfaces, the design embeds epistemic friction into the interface logic itself. Users must actively disrupt the screen to reveal what was hidden in plain sight—engaging in a micro-performance of critical thinking.</p>
 
-    <div class="back-button">
-      <a href="../index.html">← Back to Gallery</a>
-    </div>
-  </footer>
+
+  <div class="back-button">
+    <a href="../index.html">Back to Gallery</a>
+  </div>
+
+  <div class="next-button">
+    <a href="../project2/index.html">→</a>
+  </div>
+</footer>
 
   <!-- ✅ 加载你的 sketch.js -->
   <script src="sketch.js"></script>
