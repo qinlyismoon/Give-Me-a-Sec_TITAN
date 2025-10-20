@@ -2,14 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sound-Controlled Ball Game</title>
+  <title>Voicing Forward</title>
+
+  <!-- p5.js & p5.sound -->
   <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/ml5@0.12.2/dist/ml5.min.js"></script>
+
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', monospace;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      padding: 40px 20px 10px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+    #canvas-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    footer {
+      max-width: 800px;
+      padding: 10px 30px 50px;
+      font-size: 16px;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    footer h2 {
+      font-size: 18px;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #444;
+    }
+
+    .back-button {
+      margin: 40px 0 60px;
+      text-align: center;
+    }
+
+    .back-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
+
 <body>
-  <main></main>
+  <header>
+    <h1>Voicing Forward</h1>
+  </header>
+
+  <div id="canvas-wrapper">
+    <div id="canvas-container"></div>
+  </div>
+
+  <footer>
+    <h2>Interaction</h2>
+    <p>Voice volume controls a white ball that navigates a horizontal path blocked by vertical pillars labeled with Socratic questions. As the user speaks, the ball rises or falls to pass through each barrier. New prompts are revealed sequentially.</p>
+
+    <h2>Description</h2>
+    <p>This interactive system transforms the Socratic method into a sound-controlled, spatial experience. Users progress by modulating their voice volume, guiding a ball through a sequence of labeled gates: author?, professional?, purpose?, bias?, stereotypes?. Each cleared pillar reveals the next, forming a rhythm of inquiry that mirrors the structure of critical questioning.</p>
+
+    <h2>Design Intention</h2>
+    <p><em>Voicing Forward<em> operationalizes critical thinking as embodied learning. Voice becomes action. Movement becomes method. The interface rejects passive reception, requiring users to speak their way forward. Titan is positioned as a co-participant, supporting epistemic progression.</p>
+
+    <div class="back-button">
+      <a href="../index.html">← Back to Gallery</a>
+    </div>
+  </footer>
+
   <script src="sketch.js"></script>
 </body>
 </html>
