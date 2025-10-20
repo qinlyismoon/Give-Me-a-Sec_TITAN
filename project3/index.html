@@ -1,15 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+<head>
+  <meta charset="utf-8" />
+  <title>[Your Project Title]</title>
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
+  <!-- p5.js and sound library -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"></script>
+
+  <!-- optional external style -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      padding: 40px 20px 10px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+    #canvas-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    footer {
+      max-width: 800px;
+      padding: 10px 30px 50px;
+      font-size: 16px;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    footer h2 {
+      font-size: 18px;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      color: #444;
+    }
+
+    .back-button {
+      margin: 40px 0 60px;
+      text-align: center;
+    }
+
+    .back-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>[Your Project Title]</h1>
+  </header>
+
+  <div id="canvas-wrapper">
+    <div id="canvas-container"></div>
+  </div>
+
+  <footer>
+    <h2>Interaction</h2>
+    <p>[Describe how the user interacts with the piece – e.g., "Clicking causes particles to scatter"]</p>
+
+    <h2>Description</h2>
+    <p>[Explain what happens visually or conceptually – e.g., "Particles form words based on user behavior"]</p>
+
+    <h2>Design Intention</h2>
+    <p>[Share your design thinking or concept – e.g., "This work explores hidden meaning in everyday gestures"]</p>
+
+    <div class="back-button">
+      <a href="../index.html">← Back to Gallery</a>
+    </div>
+  </footer>
+
+  <script src="sketch.js"></script>
+</body>
 </html>
