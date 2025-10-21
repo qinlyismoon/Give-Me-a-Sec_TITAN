@@ -62,36 +62,46 @@
       color: #444;
     }
 
-.footer-nav-three {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 40px 0 60px;
-  padding: 0 10px;
-  gap: 10px;
-}
-
-.nav-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-  white-space: nowrap;
-}
-
-.nav-button:hover {
-  background-color: #333;
-}
-
-.nav-button.placeholder {
-  background: transparent;
-  pointer-events: none;
-  visibility: hidden;
-}
+    .footer-nav-three {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0 60px;
+      max-width: 800px; 
+      padding: 0 0px;    
+      width: 100%;
+    }
+    
+    .footer-left {
+      flex-shrink: 0;
+    }
+    
+    .footer-right {
+      display: flex;
+      gap: 8px; /* 控制左右按钮间的距离 */
+    }
+    
+    .nav-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+      white-space: nowrap;
+    }
+    
+    .nav-button:hover {
+      background-color: #333;
+    }
+    
+    .nav-button.placeholder {
+      background: transparent;
+      pointer-events: none;
+      visibility: hidden;
+    }
 
     .copyright {
       font-size: 16px;
@@ -100,7 +110,7 @@
       padding:  10px 0;
       max-width: 800px;
       width: 100%;
-    
+    }
   </style>
 </head>
 
